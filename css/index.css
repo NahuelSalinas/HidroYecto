@@ -1,5 +1,5 @@
 :root{
-    --bgColor: #ffff;
+    --bgColor: #e6d9d9;
 }
 
 *{
@@ -19,9 +19,7 @@ html{
 }
 
 body{
-    background: #76b852;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #479423, #a8e063);
     color: var(--bgColor);
 }
 
@@ -115,8 +113,40 @@ main{
     box-shadow: .2em .2em .4em rgba(0, 0, 0, 0.781);
 }
 
+/*////// SOBRE NOSOTROS //////*/
+
+.nosotros{
+    width: 30em;
+    margin: auto;
+    margin-top: 3em;
+}
+
+.img-nosotros{
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#img-1{
+    margin-left: 0;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    object-fit: cover;
+    background: url(/img/index/lechuga-2.webp);
+    margin-right: 6em;
+}
+
+#img-2{
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    object-fit: cover;
+    background: url(/img/index/lechuga-1.png);
+}
+
 .contactos{
-    background-color: rgba(79, 92, 86, 0.349);
+    background-color: rgba(218, 224, 222, 0.349);
     padding: 2em;
     padding-inline: 3em;
     border-radius: .4em;
@@ -126,13 +156,14 @@ main{
 }
 
 .contactos:hover{
-    box-shadow: .1em .2em .5em black;
+    box-shadow: .1em .2em .5em rgb(92, 88, 88);
     transform: scale(1.01);
     transition: .5s;
 }
 
 textarea{
     border: none;
+    text-indent: .5em;
 }
 
 .contactos h2{
@@ -157,7 +188,6 @@ textarea{
     transition: .5s;
 }
 
-
 footer{
     text-align: center;
     font-size: small;
@@ -165,13 +195,13 @@ footer{
 
 hr{
     border:none;
-    border-top:.5px solid #c4c4c4;
+    border-top:.5px solid #ffffff;
     
 }
 
 ::-webkit-scrollbar {
     width: .8em;
-    background-color: #76b852;
+    background-color: #a8e063;
     }
     
     ::-webkit-scrollbar-thumb {
